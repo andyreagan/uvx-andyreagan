@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "andyreagan"
-version = "0.2.0"
+version = "0.2.1"
 description = "A command-line resume printer for Andy Reagan - Senior Data Scientist and educator with Ph.D. in Applied Mathematics"
 authors = [{name = "Andy Reagan"}]
 license = "MIT"
-readme = "README.org"
+readme = {file = "README.org", content-type = "text/x-org"}
 homepage = "https://github.com/andyreagan/uvx-andyreagan"
 repository = "https://github.com/andyreagan/uvx-andyreagan"
 keywords = ["resume", "cv", "cli", "data-science", "bio"]
