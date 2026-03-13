@@ -3,7 +3,6 @@
 import subprocess
 import sys
 
-import pytest
 
 import andyreagan
 from andyreagan.main import main

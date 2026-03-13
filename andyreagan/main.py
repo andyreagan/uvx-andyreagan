@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Andy Reagan's resume printer."""
 
+
 def main():
     """Print Andy Reagan's resume."""
     resume = """
@@ -56,6 +57,7 @@ PERSONAL
 Contact: github.com/andyreagan | strava.com/athletes/136573
 """
     print(resume)
+
 
 if __name__ == "__main__":
     main()
