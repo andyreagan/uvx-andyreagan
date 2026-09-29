@@ -3,7 +3,6 @@
 import subprocess
 import sys
 
-
 import andyreagan
 from andyreagan.main import main
 
@@ -45,6 +44,7 @@ def test_cli_entry_point():
         [sys.executable, "-m", "andyreagan.main"],
         capture_output=True,
         text=True,
+        check=False,
     )
     assert result.returncode == 0
     assert "ANDY REAGAN" in result.stdout
@@ -57,6 +57,7 @@ def test_cli_via_entry_point_script():
         [sys.executable, "-c", "from andyreagan.main import main; main()"],
         capture_output=True,
         text=True,
+        check=False,
     )
     assert result.returncode == 0
     assert "ANDY REAGAN" in result.stdout
